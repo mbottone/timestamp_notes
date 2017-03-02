@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Timestamp Notes</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/notes.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src='js/notes.js'></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<h1 class="col-lg-4 col-lg-offset-4 heading">Timestamp Notes</h1>
+			</div>
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2">
+					<form id="notes-form">
+						<div class="form-group">
+							<input id='note-text' class="form-control" type="text" placeholder="Type note here..." />
+						</div>
+						<div class="pull-left">
+							<button type="submit" class="btn btn-primary">Take Note</button>
+						</div>
+						<div class="pull-right">
+							<button id="clearBtn" class="btn btn-danger">Clear Notes</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class='well col-xs-8 col-xs-offset-2 top-padded'>
+					<ul class="unf-list" id='notes'></ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

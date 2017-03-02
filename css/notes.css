@@ -1,0 +1,12 @@
+.unf-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.heading {
+	text-align: center;
+}
+
+.top-padded {
+	margin-top: 15px;
+}
