@@ -30,6 +30,9 @@ function getTimeStamp() {
 }
 
 function clearNotes() {
-	localStorage.notes = '';
-	$('#notes').html('');
+	let response = confirm("Are you sure you want to clear your notes?");
+	if (response) {
+    	localStorage.notes = '';
+		$('#notes').html('');
+	}
 }
